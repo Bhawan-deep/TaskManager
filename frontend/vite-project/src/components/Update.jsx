@@ -21,7 +21,7 @@ function Update() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/home/UpdateTask/${id}`);
+      const res = await axios.get(`https://taskmanager-ahlh.onrender.com/home/UpdateTask/${id}`);
       settempTitle(res.data.title);
       settempDescription(res.data.description);
     } catch (err) {
@@ -31,7 +31,7 @@ function Update() {
 
   const update = async () => {
     try {
-      await axios.put(`http://localhost:8000/home/UpdateTask/${id}`, {
+      await axios.put(`https://taskmanager-ahlh.onrender.com/home/UpdateTask/${id}`, {
         title,
         description,
       });
