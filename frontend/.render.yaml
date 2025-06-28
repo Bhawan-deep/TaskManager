@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: taskmanager-frontend
+    env: static
+    staticPublishPath: vite-project/dist
+    buildCommand: cd vite-project && npm install && npm run build
