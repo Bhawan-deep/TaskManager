@@ -13,7 +13,7 @@ const TaskView = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/home/fetchData");
+      const res = await axios.get("https://taskmanager-ahlh.onrender.com/home/fetchData");
       setTasks(res.data);
     } catch (err) {
       console.error("Error fetching data:", err);
@@ -22,7 +22,7 @@ const TaskView = () => {
 
   const handleDel = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/home/delete/${id}`);
+      await axios.delete(`https://taskmanager-ahlh.onrender.com/home/delete/${id}`);
       fetchData();
     } catch (err) {
       console.error("Error deleting data:", err);
