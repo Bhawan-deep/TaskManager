@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/addTask" element={<TaskAdd />} />
         <Route path="/viewTask" element={<TaskView />} />
-        <Route path="update/:id" element={<Update />} />
+        <Route path="/update/:id" element={<Update />} />
       </Routes>
     </Router>
 
