@@ -11,7 +11,7 @@ const TaskAdd = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://taskmanager-ahlh.onrender.com/addTask", {
+      await axios.post("https://taskmanager-ahlh.onrender.com/home/addTask", {
         title,
         description,
       });
